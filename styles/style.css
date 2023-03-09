@@ -50,12 +50,6 @@ nav .container {
   font-family: "Nunito Sans", sans-serif;
   overflow: hidden;
 }
-.nav-list ul li a:link,
-.nav-list ul li a:visited,
-.nav-list ul li a:hover,
-.nav-list ul li a:active {
-  text-decoration: none;
-}
 .nav-list ul li a::after {
   display: block;
   position: absolute;
@@ -78,6 +72,145 @@ nav .container {
           transform: translateX(0%);
 }
 
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+.header-title .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 260px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(7, 154, 128, 0.3)), to(rgba(7, 154, 128, 0)));
+  background: linear-gradient(90deg, rgba(7, 154, 128, 0.3) 0%, rgba(7, 154, 128, 0) 100%);
+}
+.header-title .name h1 {
+  color: #fff;
+  font-size: 60px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.header-title .name h1 span {
+  background: -webkit-linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(2, 144, 147) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header-title .name h2 {
+  color: #fff;
+  font-size: 42px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 140px;
+}
+.header-title .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+.header-title .buttons .contact {
+  display: block;
+  width: 200px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: #079a80;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  line-height: 80px;
+}
+.header-title .buttons .contact:hover {
+  -webkit-box-shadow: 0 0 8px 4px rgba(7, 154, 128, 0.4);
+          box-shadow: 0 0 8px 4px rgba(7, 154, 128, 0.4);
+}
+.header-title .buttons .projects {
+  position: relative;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Nunito Sans", sans-serif;
+  overflow: hidden;
+}
+.header-title .buttons .projects::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #079a80;
+  -webkit-transform: translateX(-105%);
+          transform: translateX(-105%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.header-title .buttons .projects:hover::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.header-title .buttons span {
+  color: #fff;
+  font-size: 26px;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0 32px;
+}
+
+.header-image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-image img {
+  width: 700px;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -87,4 +220,12 @@ nav .container {
 
 body {
   background-color: #101017;
+  overflow-x: hidden;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

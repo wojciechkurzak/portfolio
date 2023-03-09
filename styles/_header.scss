@@ -1,0 +1,120 @@
+header {
+	.container {
+		display: flex;
+		align-items: center;
+		height: calc(100vh - 60px);
+	}
+}
+
+.header-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+
+	.name {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 260px;
+		background: linear-gradient(
+			90deg,
+			rgba(7, 154, 128, 0.3) 0%,
+			rgba(7, 154, 128, 0) 100%
+		);
+
+		h1 {
+			color: #fff;
+			font-size: 60px;
+			font-family: 'Nunito Sans', sans-serif;
+
+			span {
+				background: -webkit-linear-gradient(
+					135deg,
+					rgba(255, 255, 255, 1) 0%,
+					rgba(2, 144, 147, 1) 100%
+				);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 42px;
+			font-family: 'Nunito Sans', sans-serif;
+			margin-left: 140px;
+		}
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 70px;
+
+		.contact {
+			display: block;
+			width: 200px;
+			height: 80px;
+			border-radius: 8px;
+			background-color: #079a80;
+			transition: box-shadow 0.3s;
+			color: #fff;
+			font-size: 26px;
+			font-family: 'Nunito Sans', sans-serif;
+			text-align: center;
+			line-height: 80px;
+
+			&:hover {
+				box-shadow: 0 0 8px 4px rgba(7, 154, 128, 0.4);
+			}
+		}
+
+		.projects {
+			position: relative;
+			color: #fff;
+			font-size: 26px;
+			font-family: 'Nunito Sans', sans-serif;
+			overflow: hidden;
+
+			&::after {
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				content: '';
+				height: 3px;
+				width: 100%;
+				border-radius: 2px;
+				background-color: #079a80;
+				transform: translateX(-105%);
+				transition: transform 0.3s;
+			}
+
+			&:hover::after {
+				transform: translateX(0%);
+			}
+		}
+
+		span {
+			color: #fff;
+			font-size: 26px;
+			font-family: 'Nunito Sans', sans-serif;
+			margin: 0 32px;
+		}
+	}
+}
+
+.header-image {
+	width: 50%;
+	display: flex;
+	align-items: center;
+
+	img {
+		width: 700px;
+		margin-top: 60px;
+		margin-left: 40px;
+	}
+}

@@ -1,4 +1,5 @@
 @import 'navigation';
+@import 'header';
 
 * {
 	margin: 0;
@@ -8,4 +9,12 @@
 
 body {
 	background-color: #101017;
+	overflow-x: hidden;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
 }

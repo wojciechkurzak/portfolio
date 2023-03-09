@@ -43,13 +43,6 @@ nav {
 				overflow: hidden;
 			}
 
-			a:link,
-			a:visited,
-			a:hover,
-			a:active {
-				text-decoration: none;
-			}
-
 			a::after {
 				display: block;
 				position: absolute;
