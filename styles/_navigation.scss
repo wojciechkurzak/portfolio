@@ -1,3 +1,5 @@
+@import 'mixins';
+
 nav {
 	margin-bottom: 60px;
 	box-shadow: 0 0 4px 2px #000;
@@ -37,28 +39,18 @@ nav {
 
 			a {
 				position: relative;
-				color: #fff;
 				font-size: 20px;
-				font-family: 'Nunito Sans', sans-serif;
 				overflow: hidden;
-			}
 
-			a::after {
-				display: block;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				content: '';
-				height: 3px;
-				width: 100%;
-				border-radius: 2px;
-				background-color: #079a80;
-				transform: translateX(-105%);
-				transition: transform 0.3s;
-			}
+				&::after {
+					@include green-underline;
+					transform: translateX(-105%);
+					transition: transform 0.3s;
+				}
 
-			a:hover::after {
-				transform: translateX(0%);
+				&:hover::after {
+					transform: translateX(0%);
+				}
 			}
 		}
 	}
