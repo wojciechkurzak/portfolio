@@ -123,6 +123,9 @@ header .container {
 .header-title .name h2 {
   font-size: 42px;
   margin-left: 140px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 4px 8px;
 }
 .header-title .buttons {
   display: -webkit-box;
