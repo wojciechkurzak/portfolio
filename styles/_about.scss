@@ -1,16 +1,20 @@
 @import 'mixins';
 
 .about {
+	display: flex;
+	justify-content: center;
+	padding: 0 100px;
+	background: linear-gradient(
+		180deg,
+		rgba(7, 154, 128, 0.2) 0%,
+		rgba(7, 154, 128, 0) 100%
+	);
+
 	.container {
 		display: flex;
 		gap: 100px;
-		height: 600px;
-		background: linear-gradient(
-			180deg,
-			rgba(7, 154, 128, 0.2) 0%,
-			rgba(7, 154, 128, 0) 100%
-		);
-		padding: 60px 240px 0 240px;
+		padding-bottom: 60px;
+		width: 1240px;
 	}
 }
 

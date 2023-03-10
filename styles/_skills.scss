@@ -1,0 +1,58 @@
+@import 'mixins';
+
+.skills {
+	display: flex;
+	justify-content: center;
+	padding: 0 100px;
+
+	.container {
+		padding: 60px 0;
+		width: 1240px;
+	}
+}
+
+.skills-text {
+	h3 {
+		position: relative;
+		display: inline;
+		font-size: 36px;
+
+		&::after {
+			@include green-underline;
+		}
+	}
+}
+
+.skills-cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 20px;
+
+	.card {
+		display: flex;
+		align-items: center;
+		width: 300px;
+		height: 90px;
+		border: 2px solid #079a80;
+		border-radius: 8px;
+		transition: background-color 0.3s;
+		cursor: default;
+
+		img {
+			height: 56px;
+			aspect-ratio: 1/1;
+			margin-left: 14px;
+		}
+
+		p {
+			font-size: 26px;
+			width: 100%;
+			text-align: center;
+		}
+
+		&:hover {
+			background-color: rgba(7, 154, 128, 0.1);
+		}
+	}
+}
