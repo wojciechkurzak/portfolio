@@ -69,19 +69,71 @@
 			transition: opacity 0.2s;
 			z-index: 2;
 
-			a {
-				display: block;
+			.buttons {
+				display: flex;
+				gap: 6px;
+			}
+
+			.website {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				width: 180px;
 				height: 50px;
 				border-radius: 8px;
-				background-color: rgba(7, 154, 128, 0.4);
+				background-color: #035a4a;
 				font-size: 20px;
 				text-align: center;
-				line-height: 50px;
 				transition: background-color 0.2s;
 
 				&:hover {
 					background-color: #079a80;
+				}
+			}
+
+			.github-short {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 50px;
+				width: 50px;
+				background-color: #161b22;
+				border-radius: 8px;
+				transition: background-color 0.2s;
+
+				&:hover {
+					background-color: #1c232c;
+				}
+
+				img {
+					height: 36px;
+					aspect-ratio: 1/1;
+				}
+			}
+
+			.github-full {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 180px;
+				height: 50px;
+				background-color: #161b22;
+				text-align: center;
+				border-radius: 8px;
+				transition: background-color 0.2s;
+
+				&:hover {
+					background-color: #1c232c;
+				}
+
+				img {
+					height: 36px;
+					aspect-ratio: 1/1;
+				}
+
+				span {
+					font-size: 20px;
+					width: 120px;
 				}
 			}
 
