@@ -229,7 +229,7 @@ header .container {
   display: -ms-flexbox;
   display: flex;
   gap: 100px;
-  padding: 60px 0;
+  padding-bottom: 60px;
   width: 1240px;
 }
 
@@ -253,7 +253,7 @@ header .container {
           filter: blur(25px);
   z-index: -1;
   top: -40px;
-  left: 100px;
+  left: 80px;
 }
 .about-image::after {
   display: block;
@@ -271,18 +271,16 @@ header .container {
 }
 .about-image .portfolio-image {
   position: relative;
-  height: 100%;
 }
 .about-image .portfolio-image img {
   width: 320px;
-  height: 100%;
   border-radius: 8px;
 }
 .about-image .portfolio-image::before {
   display: block;
   content: "";
   width: calc(100% + 8px);
-  height: calc(100% + 8px);
+  height: calc(100% + 4px);
   position: absolute;
   top: -4px;
   left: -4px;
@@ -314,6 +312,67 @@ header .container {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .about .container {
+    gap: 76px;
+  }
+  .cloud-image {
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    background-position: -220px;
+    height: 177px;
+  }
+  .about-image::before {
+    display: block;
+    content: "";
+    width: 220px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(50% 50% at 48.75% 61.18%, rgba(2, 144, 147, 0.6) 0%, rgba(2, 144, 147, 0.4) 100%);
+    -webkit-filter: blur(25px);
+            filter: blur(25px);
+    z-index: -1;
+    top: -40px;
+    left: 80px;
+  }
+  .about-image::after {
+    display: block;
+    content: "";
+    width: 220px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(50% 50% at 48.75% 61.18%, rgba(2, 144, 147, 0.6) 0%, rgba(2, 144, 147, 0.4) 100%);
+    -webkit-filter: blur(25px);
+            filter: blur(25px);
+    z-index: -1;
+    top: 220px;
+    left: -40px;
+  }
+  .about-image .portfolio-image img {
+    width: 260px;
+  }
+  .about-text p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-text p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 0 20px;
+  }
+  .about .container {
+    padding-top: 0;
+  }
+  .about-image {
+    display: none;
+  }
+}
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -10,11 +10,11 @@
 	background-color: #079a80;
 }
 
-@mixin luminous-circle {
+@mixin luminous-circle($width, $height) {
 	display: block;
 	content: '';
-	width: 280px;
-	height: 240px;
+	width: $width;
+	height: $height;
 	border-radius: 50%;
 	position: absolute;
 	background: radial-gradient(

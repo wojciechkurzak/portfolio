@@ -13,7 +13,7 @@
 	.container {
 		display: flex;
 		gap: 100px;
-		padding: 60px 0;
+		padding-bottom: 60px;
 		width: 1240px;
 	}
 }
@@ -27,24 +27,22 @@
 	position: relative;
 
 	&::before {
-		@include luminous-circle;
+		@include luminous-circle(280px, 240px);
 		top: -40px;
-		left: 100px;
+		left: 80px;
 	}
 
 	&::after {
-		@include luminous-circle;
+		@include luminous-circle(280px, 240px);
 		top: 240px;
 		left: -40px;
 	}
 
 	.portfolio-image {
 		position: relative;
-		height: 100%;
 
 		img {
 			width: 320px;
-			height: 100%;
 			border-radius: 8px;
 		}
 
@@ -52,7 +50,7 @@
 			display: block;
 			content: '';
 			width: calc(100% + 8px);
-			height: calc(100% + 8px);
+			height: calc(100% + 4px);
 			position: absolute;
 			top: -4px;
 			left: -4px;
@@ -82,5 +80,68 @@
 	p {
 		font-size: 26px;
 		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.about {
+		.container {
+			gap: 76px;
+		}
+	}
+
+	.cloud-image {
+		background-repeat: no-repeat;
+		background-size: 1400px;
+		background-position: -220px;
+		height: 177px;
+	}
+
+	.about-image {
+		&::before {
+			@include luminous-circle(220px, 180px);
+			top: -40px;
+			left: 80px;
+		}
+
+		&::after {
+			@include luminous-circle(220px, 180px);
+			top: 220px;
+			left: -40px;
+		}
+
+		.portfolio-image {
+			img {
+				width: 260px;
+			}
+		}
+	}
+
+	.about-text {
+		p {
+			font-size: 22px;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.about-text {
+		p {
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about {
+		padding: 0 20px;
+
+		.container {
+			padding-top: 0;
+		}
+	}
+
+	.about-image {
+		display: none;
 	}
 }
