@@ -407,6 +407,12 @@ header .container {
   }
 }
 @media screen and (max-width: 1024px) {
+  .header .container {
+    width: 100vw;
+  }
+  .header-title {
+    width: 100%;
+  }
   .header-title .name {
     width: 78vw;
   }
