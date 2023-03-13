@@ -700,6 +700,11 @@ header .container {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 0 20px;
+  }
+}
 footer {
   height: 50px;
   margin-top: 60px;
