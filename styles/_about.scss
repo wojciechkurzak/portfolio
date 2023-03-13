@@ -13,7 +13,7 @@
 	.container {
 		display: flex;
 		gap: 100px;
-		padding-bottom: 60px;
+		padding: 60px 0;
 		width: 1240px;
 	}
 }
@@ -38,11 +38,33 @@
 		left: -40px;
 	}
 
-	img {
-		width: 320px;
-		border-radius: 10px;
-		box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5);
-		border: 3px solid #079a80;
+	.portfolio-image {
+		position: relative;
+		height: 100%;
+
+		img {
+			width: 320px;
+			height: 100%;
+			border-radius: 8px;
+		}
+
+		&::before {
+			display: block;
+			content: '';
+			width: calc(100% + 8px);
+			height: calc(100% + 8px);
+			position: absolute;
+			top: -4px;
+			left: -4px;
+			background: -webkit-linear-gradient(
+				135deg,
+				rgba(255, 255, 255, 1) 0%,
+				rgba(2, 144, 147, 1) 100%
+			);
+			border-radius: 8px;
+			box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5);
+			z-index: -1;
+		}
 	}
 }
 

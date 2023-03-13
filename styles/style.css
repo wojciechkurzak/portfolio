@@ -229,7 +229,7 @@ header .container {
   display: -ms-flexbox;
   display: flex;
   gap: 100px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   width: 1240px;
 }
 
@@ -269,12 +269,28 @@ header .container {
   top: 240px;
   left: -40px;
 }
-.about-image img {
+.about-image .portfolio-image {
+  position: relative;
+  height: 100%;
+}
+.about-image .portfolio-image img {
   width: 320px;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 8px;
+}
+.about-image .portfolio-image::before {
+  display: block;
+  content: "";
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background: -webkit-linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(2, 144, 147) 100%);
+  border-radius: 8px;
   -webkit-box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5);
-  border: 3px solid #079a80;
+  z-index: -1;
 }
 
 .about-text h3 {
