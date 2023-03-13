@@ -32,8 +32,10 @@
 
 	.card {
 		position: relative;
-		width: 400px;
-		height: 340px;
+		max-width: 400px;
+		max-height: 340px;
+		height: 25vw;
+		width: calc(100% / 3 - 1em);
 		border: 2px solid #079a80;
 		border-radius: 8px;
 		overflow: hidden;
@@ -43,12 +45,14 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			width: 100%;
+			padding: 0 20px;
 			transition: opacity 0.2s;
 			z-index: -1;
 
 			p {
 				font-size: 48px;
-				width: 300px;
+				text-align: center;
 				text-align: center;
 				-webkit-user-select: none;
 				-ms-user-select: none;
@@ -58,16 +62,15 @@
 
 		.hovered {
 			display: flex;
-			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 			width: 100%;
 			height: 100%;
 			padding: 0 40px;
-			gap: 50px;
+			padding-top: 70px;
 			opacity: 0;
 			transition: opacity 0.2s;
-			z-index: 2;
+			z-index: 1;
 
 			.buttons {
 				display: flex;
@@ -78,7 +81,8 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 180px;
+				max-width: 180px;
+				width: 8em;
 				height: 50px;
 				border-radius: 8px;
 				background-color: #035a4a;
@@ -140,6 +144,8 @@
 			p {
 				font-size: 26px;
 				text-align: center;
+				margin-top: 50px;
+				cursor: default;
 			}
 		}
 
@@ -182,6 +188,100 @@
 		&:hover::before {
 			transform: scale(1.05);
 			filter: blur(1px);
+		}
+	}
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1280px) {
+	.projects-cards {
+		.card {
+			.hovered {
+				padding-top: 60px;
+
+				.website {
+					font-size: 18px;
+				}
+
+				.github-full {
+					span {
+						font-size: 18px;
+					}
+				}
+
+				p {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1120px) {
+	.projects-cards {
+		.card {
+			.preview {
+				p {
+					font-size: 40px;
+				}
+			}
+			.hovered {
+				padding-top: 50px;
+
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.projects-cards {
+		.card {
+			max-width: 100%;
+			width: 100%;
+			margin-top: 20px;
+
+			.hovered {
+				justify-content: center;
+				padding-top: 0;
+
+				p {
+					font-size: 20px;
+				}
+			}
+
+			&:nth-of-type(2)::before {
+				background-size: 1000px;
+				background-position: top left;
+			}
+
+			&:nth-of-type(3)::before {
+				background-size: 800px;
+				background-position: top left;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.projects {
+		padding: 0 20px;
+	}
+
+	.projects-cards {
+		.card {
+			height: 200px;
+
+			.hovered {
+				p {
+					font-size: 17px;
+					margin-top: 30px;
+				}
+			}
 		}
 	}
 }
