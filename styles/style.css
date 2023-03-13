@@ -25,9 +25,19 @@ nav .container {
           backdrop-filter: blur(10px);
 }
 
-.nav-image img {
+.nav-image {
+  margin-top: 6px;
+}
+.nav-image a img {
   width: 36px;
-  margin-top: 4px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.nav-image a img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .nav-list ul {

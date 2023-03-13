@@ -21,9 +21,16 @@ nav {
 }
 
 .nav-image {
-	img {
-		width: 36px;
-		margin-top: 4px;
+	margin-top: 6px;
+	a {
+		img {
+			width: 36px;
+			transition: transform 0.2s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
 	}
 }
 
