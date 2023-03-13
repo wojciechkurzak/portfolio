@@ -25,3 +25,10 @@
 	filter: blur(25px);
 	z-index: -1;
 }
+
+@mixin hamburger-line {
+	width: 100%;
+	height: 3px;
+	border-radius: 2px;
+	background-color: #fff;
+}
