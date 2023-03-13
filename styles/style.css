@@ -88,7 +88,10 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 150px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 82vh;
 }
 
 .header-title {
@@ -102,7 +105,7 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 960px;
 }
 .header-title .name {
   display: -webkit-box;
@@ -131,8 +134,9 @@ header .container {
   -webkit-text-fill-color: transparent;
 }
 .header-title .name h2 {
-  font-size: 42px;
-  margin-left: 140px;
+  font-size: 38px;
+  margin-left: 110px;
+  margin-top: 6px;
   border: 2px solid #fff;
   border-radius: 4px;
   padding: 4px 8px;
@@ -152,8 +156,6 @@ header .container {
 }
 .header-title .buttons .to-contact {
   display: block;
-  width: 200px;
-  height: 80px;
   border-radius: 8px;
   background-color: #079a80;
   -webkit-transition: -webkit-box-shadow 0.3s;
@@ -162,7 +164,7 @@ header .container {
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   font-size: 26px;
   text-align: center;
-  line-height: 80px;
+  padding: 20px;
 }
 .header-title .buttons .to-contact:hover {
   -webkit-box-shadow: 0 0 8px 4px rgba(7, 154, 128, 0.4);
@@ -199,20 +201,77 @@ header .container {
 }
 
 .header-image {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 960px;
+  padding: 0 60px;
 }
-.header-image img {
-  width: 700px;
-  margin-top: 60px;
-  margin-left: 40px;
+.header-image svg {
+  width: 45vw;
 }
 
+@media screen and (max-width: 1280px) {
+  header .container {
+    padding: 100px 0;
+  }
+  .header-title .name {
+    height: 220px;
+  }
+  .header-title .name h1 {
+    font-size: 50px;
+  }
+  .header-title .name h2 {
+    font-size: 28px;
+  }
+  .header-title .buttons {
+    gap: 24px;
+  }
+  .header-title .buttons .to-contact {
+    font-size: 22px;
+  }
+  .header-title .buttons .to-projects {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-title .name {
+    width: 78vw;
+  }
+  .header-title .name h2 {
+    margin-left: 90px;
+  }
+  .header-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-title .name {
+    width: 100vw;
+  }
+  .header-title .name h1 {
+    font-size: 46px;
+  }
+  .header-title .name h2 {
+    font-size: 24px;
+    margin-left: 70px;
+  }
+  .header-title .buttons {
+    gap: 20px;
+  }
+  .header-title .buttons .to-contact {
+    font-size: 18px;
+  }
+  .header-title .buttons .to-projects {
+    font-size: 18px;
+  }
+}
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
