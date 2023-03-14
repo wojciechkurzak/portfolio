@@ -924,19 +924,19 @@ header .container {
   z-index: -1;
 }
 .projects-cards .card:nth-of-type(1)::before {
-  background-image: url("../portfolio/images/carmarket.png");
+  background-image: url("/portfolio/images/carmarket.png");
   background-size: 440px;
   background-position: center;
   background-repeat: no-repeat;
 }
 .projects-cards .card:nth-of-type(2)::before {
-  background-image: url("../portfolio/images/pricecheck.png");
+  background-image: url("/portfolio/images/pricecheck.png");
   background-size: 650px;
   background-position: -120px 0;
   background-repeat: no-repeat;
 }
 .projects-cards .card:nth-of-type(3)::before {
-  background-image: url("../portfolio/images/chat.png");
+  background-image: url("/portfolio/images/chat.png");
   background-size: 650px;
   background-repeat: no-repeat;
 }
@@ -988,10 +988,8 @@ header .container {
     font-size: 20px;
   }
   .projects-cards .card:nth-of-type(1)::before {
-    background-image: url("../portfolio/images/carmarket.png");
     background-size: 100%;
     background-position: center;
-    background-repeat: no-repeat;
   }
   .projects-cards .card:nth-of-type(2)::before {
     background-size: 1000px;
@@ -1014,7 +1012,6 @@ header .container {
     margin-top: 30px;
   }
   .projects-cards .card:nth-of-type(1)::before {
-    background-image: url("../portfolio/images/carmarket.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
