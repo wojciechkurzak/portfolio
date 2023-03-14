@@ -1,6 +1,8 @@
 @import 'mixins';
 
 header {
+	scroll-margin-block-start: 110px;
+	scroll-margin-block-end: 110px;
 	.container {
 		display: flex;
 		align-items: center;

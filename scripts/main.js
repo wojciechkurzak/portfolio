@@ -12,3 +12,7 @@ menuList.forEach((element) =>
 		navList.classList.remove('nav-open')
 	})
 )
+
+window.onhashchange = () => {
+	window.history.pushState('', '', '/')
+}

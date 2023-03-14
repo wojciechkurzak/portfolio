@@ -1,4 +1,6 @@
 nav {
+  scroll-margin-block-start: 110pxx;
+  scroll-margin-block-end: 110px;
   position: fixed;
   top: 0;
   left: 0;
@@ -246,6 +248,10 @@ nav .container {
   .nav-close-button::after {
     opacity: 1;
   }
+}
+header {
+  scroll-margin-block-start: 110px;
+  scroll-margin-block-end: 110px;
 }
 header .container {
   display: -webkit-box;

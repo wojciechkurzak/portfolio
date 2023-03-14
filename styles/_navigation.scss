@@ -1,6 +1,9 @@
 @import 'mixins';
 
 nav {
+	// display: none;
+	scroll-margin-block-start: 110pxx;
+	scroll-margin-block-end: 110px;
 	position: fixed;
 	top: 0;
 	left: 0;
