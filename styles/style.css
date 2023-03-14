@@ -1077,6 +1077,9 @@ header .container {
   }
 }
 @media screen and (max-width: 480px) {
+  .contact-cards .card img {
+    height: 28px;
+  }
   .contact-cards .card p {
     font-size: 16px;
   }
