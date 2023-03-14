@@ -450,6 +450,11 @@ header .container {
     font-size: 18px;
   }
 }
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .header-title {
+    margin-top: 110px;
+  }
+}
 .about {
   display: -webkit-box;
   display: -ms-flexbox;

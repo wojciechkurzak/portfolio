@@ -191,3 +191,9 @@ header {
 		}
 	}
 }
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+	.header-title {
+		margin-top: 110px;
+	}
+}
