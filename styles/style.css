@@ -1077,6 +1077,14 @@ header .container {
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 480px) {
+  .contact-cards .card p {
+    font-size: 16px;
+  }
+  .contact-cards .card a {
+    font-size: 16px;
+  }
+}
 footer {
   height: 50px;
   margin-top: 60px;
