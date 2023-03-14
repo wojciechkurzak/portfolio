@@ -10,6 +10,7 @@ navButton.addEventListener('click', () => {
 menuList.forEach((element) =>
 	element.addEventListener('click', () => {
 		navList.classList.remove('nav-open')
+		navButton.classList.remove('nav-close-button')
 	})
 )
 
