@@ -30,14 +30,8 @@
 		left: 0;
 		height: 243px;
 		width: 100%;
-		background-image: url('../images/cloud.svg');
+		background-image: url('/portfolio/images/cloud.svg');
 	}
-}
-
-.cloud-image {
-	height: 243px;
-	width: 100%;
-	background-image: url('../images/cloud.svg');
 }
 
 .about-image {
@@ -106,13 +100,6 @@
 		.container {
 			gap: 76px;
 		}
-	}
-
-	.cloud-image {
-		background-repeat: no-repeat;
-		background-size: 1400px;
-		background-position: -220px;
-		height: 177px;
 	}
 
 	.about-image {

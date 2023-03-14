@@ -489,13 +489,7 @@ header .container {
   left: 0;
   height: 243px;
   width: 100%;
-  background-image: url("../images/cloud.svg");
-}
-
-.cloud-image {
-  height: 243px;
-  width: 100%;
-  background-image: url("../images/cloud.svg");
+  background-image: url("/portfolio/images/cloud.svg");
 }
 
 .about-image {
@@ -576,12 +570,6 @@ header .container {
 @media screen and (max-width: 1024px) {
   .about .container {
     gap: 76px;
-  }
-  .cloud-image {
-    background-repeat: no-repeat;
-    background-size: 1400px;
-    background-position: -220px;
-    height: 177px;
   }
   .about-image::before {
     display: block;
@@ -936,19 +924,19 @@ header .container {
   z-index: -1;
 }
 .projects-cards .card:nth-of-type(1)::before {
-  background-image: url("../images/carmarket.png");
+  background-image: url("../portfolio/images/carmarket.png");
   background-size: 440px;
   background-position: center;
   background-repeat: no-repeat;
 }
 .projects-cards .card:nth-of-type(2)::before {
-  background-image: url("../images/pricecheck.png");
+  background-image: url("../portfolio/images/pricecheck.png");
   background-size: 650px;
   background-position: -120px 0;
   background-repeat: no-repeat;
 }
 .projects-cards .card:nth-of-type(3)::before {
-  background-image: url("../images/chat.png");
+  background-image: url("../portfolio/images/chat.png");
   background-size: 650px;
   background-repeat: no-repeat;
 }
@@ -1000,7 +988,7 @@ header .container {
     font-size: 20px;
   }
   .projects-cards .card:nth-of-type(1)::before {
-    background-image: url("../images/carmarket.png");
+    background-image: url("../portfolio/images/carmarket.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1026,7 +1014,7 @@ header .container {
     margin-top: 30px;
   }
   .projects-cards .card:nth-of-type(1)::before {
-    background-image: url("../images/carmarket.png");
+    background-image: url("../portfolio/images/carmarket.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
