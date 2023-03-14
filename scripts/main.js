@@ -15,5 +15,5 @@ menuList.forEach((element) =>
 )
 
 window.onhashchange = () => {
-	window.history.pushState('', '', '/')
+	window.history.pushState('', '', '/portfolio')
 }
