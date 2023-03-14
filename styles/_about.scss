@@ -3,7 +3,11 @@
 .about {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
 	padding: 0 100px;
+	margin-top: 243px;
 	background: linear-gradient(
 		180deg,
 		rgba(7, 154, 128, 0.2) 0%,
@@ -12,14 +16,27 @@
 
 	.container {
 		display: flex;
+		justify-content: center;
 		gap: 100px;
-		padding-bottom: 60px;
-		width: 1240px;
+		margin-bottom: 160px;
+		max-width: 1280px;
+	}
+
+	&::before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: -243px;
+		left: 0;
+		height: 243px;
+		width: 100%;
+		background-image: url('../images/cloud.svg');
 	}
 }
 
 .cloud-image {
 	height: 243px;
+	width: 100%;
 	background-image: url('../images/cloud.svg');
 }
 
@@ -78,6 +95,7 @@
 	}
 
 	p {
+		display: block;
 		font-size: 26px;
 		margin-top: 20px;
 	}
@@ -135,10 +153,6 @@
 @media screen and (max-width: 768px) {
 	.about {
 		padding: 0 20px;
-
-		.container {
-			padding-top: 0;
-		}
 	}
 
 	.about-image {

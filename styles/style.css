@@ -457,7 +457,16 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
   padding: 0 100px;
+  margin-top: 243px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 154, 128, 0.2)), to(rgba(7, 154, 128, 0)));
   background: linear-gradient(180deg, rgba(7, 154, 128, 0.2) 0%, rgba(7, 154, 128, 0) 100%);
 }
@@ -465,13 +474,27 @@ header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 100px;
-  padding-bottom: 60px;
-  width: 1240px;
+  margin-bottom: 160px;
+  max-width: 1280px;
+}
+.about::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -243px;
+  left: 0;
+  height: 243px;
+  width: 100%;
+  background-image: url("../images/cloud.svg");
 }
 
 .cloud-image {
   height: 243px;
+  width: 100%;
   background-image: url("../images/cloud.svg");
 }
 
@@ -545,6 +568,7 @@ header .container {
   background-color: #079a80;
 }
 .about-text p {
+  display: block;
   font-size: 26px;
   margin-top: 20px;
 }
@@ -603,9 +627,6 @@ header .container {
   .about {
     padding: 0 20px;
   }
-  .about .container {
-    padding-top: 0;
-  }
   .about-image {
     display: none;
   }
@@ -618,9 +639,9 @@ header .container {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 100px;
+  margin-bottom: 160px;
 }
 .skills .container {
-  padding: 60px 0;
   width: 1240px;
 }
 
@@ -717,9 +738,9 @@ header .container {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 100px;
+  margin-bottom: 160px;
 }
 .projects .container {
-  padding: 60px 0;
   width: 1240px;
 }
 
@@ -1003,7 +1024,6 @@ header .container {
   padding: 0 100px;
 }
 .contact .container {
-  padding: 60px 0;
   width: 1240px;
 }
 
@@ -1085,6 +1105,7 @@ footer .container p {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 80px;
 }
 
 body {
