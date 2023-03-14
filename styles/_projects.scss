@@ -244,13 +244,13 @@
 
 @media screen and (max-width: 1024px) {
 	.projects-cards {
+		gap: 20px;
+
 		.card {
 			max-width: 100%;
 			width: 100%;
-			margin-top: 20px;
 
 			.hovered {
-				justify-content: center;
 				padding-top: 0;
 
 				p {

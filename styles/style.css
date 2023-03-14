@@ -973,15 +973,14 @@ header .container {
   }
 }
 @media screen and (max-width: 1024px) {
+  .projects-cards {
+    gap: 20px;
+  }
   .projects-cards .card {
     max-width: 100%;
     width: 100%;
-    margin-top: 20px;
   }
   .projects-cards .card .hovered {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-top: 0;
   }
   .projects-cards .card .hovered p {
