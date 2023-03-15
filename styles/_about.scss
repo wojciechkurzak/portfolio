@@ -30,7 +30,7 @@
 		left: 0;
 		height: 243px;
 		width: 100%;
-		background-image: url('/portfolio/images/cloud.svg');
+		background-image: url('../images/cloud.svg');
 	}
 }
 
@@ -144,5 +144,11 @@
 
 	.about-image {
 		display: none;
+	}
+}
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+	.about {
+		margin-top: 403px;
 	}
 }
