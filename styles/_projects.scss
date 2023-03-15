@@ -47,6 +47,7 @@
 			transform: translate(-50%, -50%);
 			width: 100%;
 			padding: 0 20px;
+			opacity: 0;
 			transition: opacity 0.2s;
 			z-index: -1;
 
@@ -68,7 +69,7 @@
 			height: 100%;
 			padding: 0 40px;
 			padding-top: 70px;
-			opacity: 0;
+			opacity: 1;
 			transition: opacity 0.2s;
 			z-index: 1;
 
@@ -249,9 +250,11 @@
 		.card {
 			max-width: 100%;
 			width: 100%;
+			align-items: center;
 
 			.hovered {
 				padding-top: 0;
+				justify-content: center;
 
 				p {
 					font-size: 20px;
