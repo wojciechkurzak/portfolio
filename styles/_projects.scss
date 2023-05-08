@@ -1,304 +1,304 @@
 @import 'mixins';
 
 .projects {
-	display: flex;
-	justify-content: center;
-	padding: 0 100px;
-	margin-bottom: 160px;
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+  margin-bottom: 160px;
 
-	.container {
-		width: 1240px;
-	}
+  .container {
+    width: 1240px;
+  }
 }
 
 .projects-text {
-	h3 {
-		position: relative;
-		display: inline;
-		font-size: 36px;
+  h3 {
+    position: relative;
+    display: inline;
+    font-size: 36px;
 
-		&::after {
-			@include green-underline;
-		}
-	}
+    &::after {
+      @include green-underline;
+    }
+  }
 }
 
 .projects-cards {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-top: 20px;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
 
-	.card {
-		position: relative;
-		max-width: 400px;
-		max-height: 340px;
-		height: 25vw;
-		width: calc(100% / 3 - 1em);
-		border: 2px solid #079a80;
-		border-radius: 8px;
-		overflow: hidden;
+  .card {
+    position: relative;
+    max-width: 400px;
+    max-height: 340px;
+    height: 25vw;
+    width: calc(100% / 3 - 1em);
+    border: 2px solid #079a80;
+    border-radius: 8px;
+    overflow: hidden;
 
-		.preview {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 100%;
-			padding: 0 20px;
-			transition: opacity 0.2s;
-			z-index: -1;
+    .preview {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 20px;
+      transition: opacity 0.2s;
+      z-index: -1;
 
-			p {
-				font-size: 48px;
-				text-align: center;
-				text-align: center;
-				-webkit-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}
-		}
+      p {
+        font-size: 48px;
+        text-align: center;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
 
-		.hovered {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			width: 100%;
-			height: 100%;
-			padding: 0 40px;
-			padding-top: 70px;
-			opacity: 0;
-			transition: opacity 0.2s;
-			z-index: 1;
+    .hovered {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding: 0 40px;
+      padding-top: 70px;
+      opacity: 0;
+      transition: opacity 0.2s;
+      z-index: 1;
 
-			.buttons {
-				display: flex;
-				gap: 6px;
-			}
+      .buttons {
+        display: flex;
+        gap: 6px;
+      }
 
-			.website {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				max-width: 180px;
-				width: 8em;
-				height: 50px;
-				border-radius: 8px;
-				background-color: #035a4a;
-				font-size: 20px;
-				text-align: center;
-				transition: background-color 0.2s;
+      .website {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 180px;
+        width: 8em;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #035a4a;
+        font-size: 20px;
+        text-align: center;
+        transition: background-color 0.2s;
 
-				&:hover {
-					background-color: #079a80;
-				}
-			}
+        &:hover {
+          background-color: #079a80;
+        }
+      }
 
-			.github-short {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				height: 50px;
-				width: 50px;
-				background-color: #161b22;
-				border-radius: 8px;
-				transition: background-color 0.2s;
+      .github-short {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        background-color: #161b22;
+        border-radius: 8px;
+        transition: background-color 0.2s;
 
-				&:hover {
-					background-color: #1c232c;
-				}
+        &:hover {
+          background-color: #1c232c;
+        }
 
-				img {
-					height: 36px;
-					aspect-ratio: 1/1;
-				}
-			}
+        img {
+          height: 36px;
+          aspect-ratio: 1/1;
+        }
+      }
 
-			.github-full {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 180px;
-				height: 50px;
-				background-color: #161b22;
-				text-align: center;
-				border-radius: 8px;
-				transition: background-color 0.2s;
+      .github-full {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 50px;
+        background-color: #161b22;
+        text-align: center;
+        border-radius: 8px;
+        transition: background-color 0.2s;
 
-				&:hover {
-					background-color: #1c232c;
-				}
+        &:hover {
+          background-color: #1c232c;
+        }
 
-				img {
-					height: 36px;
-					aspect-ratio: 1/1;
-				}
+        img {
+          height: 36px;
+          aspect-ratio: 1/1;
+        }
 
-				span {
-					font-size: 20px;
-					width: 120px;
-				}
-			}
+        span {
+          font-size: 20px;
+          width: 120px;
+        }
+      }
 
-			p {
-				font-size: 26px;
-				text-align: center;
-				margin-top: 50px;
-				cursor: default;
-			}
-		}
+      p {
+        font-size: 26px;
+        text-align: center;
+        margin-top: 50px;
+        cursor: default;
+      }
+    }
 
-		&:hover {
-			.hovered {
-				opacity: 1;
-			}
-			.preview {
-				opacity: 0;
-			}
-		}
+    &:hover {
+      .hovered {
+        opacity: 1;
+      }
+      .preview {
+        opacity: 0;
+      }
+    }
 
-		&::before {
-			display: block;
-			content: '';
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			opacity: 0.2;
-			filter: blur(2px);
-			transition: transform 0.3s, filter 0.3s;
-			z-index: -1;
-		}
+    &::before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.2;
+      filter: blur(2px);
+      transition: transform 0.3s, filter 0.3s;
+      z-index: -1;
+    }
 
-		&:nth-of-type(1)::before {
-			background-image: url('/portfolio/images/carmarket.png');
-			background-size: 440px;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
+    &:nth-of-type(1)::before {
+      background-image: url('/portfolio/images/productcharts.png');
+      background-size: 650px;
+      background-position: -120px 0;
+      background-repeat: no-repeat;
+    }
 
-		&:nth-of-type(2)::before {
-			background-image: url('/portfolio/images/pricecheck.png');
-			background-size: 650px;
-			background-position: -120px 0;
-			background-repeat: no-repeat;
-		}
+    &:nth-of-type(2)::before {
+      background-image: url('/portfolio/images/newsreader.png');
+      background-size: 650px;
+      background-repeat: no-repeat;
+    }
 
-		&:nth-of-type(3)::before {
-			background-image: url('/portfolio/images/chat.png');
-			background-size: 650px;
-			background-repeat: no-repeat;
-		}
+    &:nth-of-type(3)::before {
+      background-image: url('/portfolio/images/carmarket.png');
+      background-size: 440px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-		&:hover::before {
-			transform: scale(1.05);
-			filter: blur(1px);
-		}
-	}
+    &:hover::before {
+      transform: scale(1.05);
+      filter: blur(1px);
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
-	.projects-cards {
-		.card {
-			.hovered {
-				padding-top: 60px;
+  .projects-cards {
+    .card {
+      .hovered {
+        padding-top: 60px;
 
-				.website {
-					font-size: 18px;
-				}
+        .website {
+          font-size: 18px;
+        }
 
-				.github-full {
-					span {
-						font-size: 18px;
-					}
-				}
+        .github-full {
+          span {
+            font-size: 18px;
+          }
+        }
 
-				p {
-					font-size: 22px;
-				}
-			}
-		}
-	}
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1120px) {
-	.projects-cards {
-		.card {
-			.preview {
-				p {
-					font-size: 40px;
-				}
-			}
-			.hovered {
-				padding-top: 50px;
+  .projects-cards {
+    .card {
+      .preview {
+        p {
+          font-size: 40px;
+        }
+      }
+      .hovered {
+        padding-top: 50px;
 
-				p {
-					font-size: 18px;
-				}
-			}
-		}
-	}
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
-	.projects-cards {
-		gap: 20px;
+  .projects-cards {
+    gap: 20px;
 
-		.card {
-			max-width: 100%;
-			width: 100%;
-			align-items: center;
+    .card {
+      max-width: 100%;
+      width: 100%;
+      align-items: center;
 
-			.hovered {
-				padding-top: 0;
-				justify-content: center;
+      .hovered {
+        padding-top: 0;
+        justify-content: center;
 
-				p {
-					font-size: 20px;
-				}
-			}
+        p {
+          font-size: 20px;
+        }
+      }
 
-			&:nth-of-type(1)::before {
-				background-size: 100%;
-				background-position: center;
-			}
+      &:nth-of-type(1)::before {
+        background-size: 1000px;
+        background-position: top left;
+      }
 
-			&:nth-of-type(2)::before {
-				background-size: 1000px;
-				background-position: top left;
-			}
+      &:nth-of-type(2)::before {
+        background-size: 800px;
+        background-position: top left;
+      }
 
-			&:nth-of-type(3)::before {
-				background-size: 800px;
-				background-position: top left;
-			}
-		}
-	}
+      &:nth-of-type(3)::before {
+        background-size: 100%;
+        background-position: center;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.projects {
-		padding: 0 20px;
-	}
+  .projects {
+    padding: 0 20px;
+  }
 
-	.projects-cards {
-		.card {
-			height: 200px;
+  .projects-cards {
+    .card {
+      height: 200px;
 
-			.hovered {
-				p {
-					font-size: 17px;
-					margin-top: 30px;
-				}
-			}
+      .hovered {
+        p {
+          font-size: 17px;
+          margin-top: 30px;
+        }
+      }
 
-			&:nth-of-type(1)::before {
-				background-size: 100%;
-				background-position: center;
-				background-repeat: no-repeat;
-			}
-		}
-	}
+      &:nth-of-type(3)::before {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
