@@ -30,6 +30,10 @@ nav .container {
 .nav-image {
   margin-top: 6px;
 }
+.nav-image a {
+  display: block;
+  height: 40px;
+}
 .nav-image a img {
   width: 36px;
   -webkit-transition: -webkit-transform 0.2s;
@@ -667,7 +671,7 @@ header .container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 20px;
-  gap: 16px;
+  gap: 20px 21px;
 }
 .skills-cards .card {
   display: -webkit-box;
@@ -700,6 +704,9 @@ header .container {
 }
 
 @media screen and (max-width: 1280px) {
+  .skills-cards {
+    gap: 20px 24px;
+  }
   .skills-cards .card {
     width: calc(33.3333333333% - 1em);
   }
@@ -718,6 +725,9 @@ header .container {
 @media screen and (max-width: 768px) {
   .skills {
     padding: 0 20px;
+  }
+  .skills-cards {
+    gap: 20px 32px;
   }
   .skills-cards .card {
     width: calc(50% - 1em);
@@ -1158,6 +1168,10 @@ span,
 a {
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
+}
+
+a {
+  cursor: pointer;
 }
 
 main {

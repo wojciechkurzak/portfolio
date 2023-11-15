@@ -1,8 +1,8 @@
 const aboutImage = document.querySelector('.about-image')
 const aboutText = document.querySelector('.about-text')
-const skills = document.querySelector('.skills')
-const projects = document.querySelector('.projects')
-const contact = document.querySelector('.contact')
+const skills = document.querySelector('.skills > .container')
+const projects = document.querySelector('.projects > .container')
+const contact = document.querySelector('.contact > .container')
 
 gsap.registerPlugin(ScrollTrigger)
 

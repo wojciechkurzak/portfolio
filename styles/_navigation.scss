@@ -26,6 +26,9 @@ nav {
 .nav-image {
   margin-top: 6px;
   a {
+    display: block;
+    height: 40px;
+
     img {
       width: 36px;
       transition: transform 0.2s;
