@@ -3,17 +3,17 @@ const navList = document.querySelector('.nav-list')
 const menuList = document.querySelectorAll('.nav-list > ul > li > a')
 
 navButton.addEventListener('click', () => {
-	navList.classList.toggle('nav-open')
-	navButton.classList.toggle('nav-close-button')
+  navList.classList.toggle('nav-open')
+  navButton.classList.toggle('nav-close-button')
 })
 
 menuList.forEach((element) =>
-	element.addEventListener('click', () => {
-		navList.classList.remove('nav-open')
-		navButton.classList.remove('nav-close-button')
-	})
+  element.addEventListener('click', () => {
+    navList.classList.remove('nav-open')
+    navButton.classList.remove('nav-close-button')
+  })
 )
 
 window.onhashchange = () => {
-	window.history.pushState('', '', '/portfolio')
+  window.history.pushState('', '', '/portfolio')
 }

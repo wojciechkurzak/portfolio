@@ -494,7 +494,7 @@ header .container {
   left: 0;
   height: 243px;
   width: 100%;
-  background-image: url("/portfolio/images/cloud.svg");
+  background-image: url("../images/cloud.svg");
 }
 
 .about-image {
@@ -1040,6 +1040,7 @@ header .container {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 100px;
+  margin-bottom: 80px;
 }
 .contact .container {
   width: 1240px;
@@ -1105,7 +1106,6 @@ header .container {
 }
 footer {
   height: 50px;
-  margin-top: 60px;
 }
 footer .container {
   display: -webkit-box;
@@ -1158,4 +1158,8 @@ span,
 a {
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
+}
+
+main {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

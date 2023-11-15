@@ -7,27 +7,27 @@
 @import 'footer';
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-	scroll-behavior: smooth;
-	scroll-padding: 80px;
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
 }
 
 body {
-	background-color: #101017;
-	overflow-x: hidden;
-	padding-top: 60px;
+  background-color: #101017;
+  overflow-x: hidden;
+  padding-top: 60px;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 h1,
@@ -36,6 +36,10 @@ h3,
 p,
 span,
 a {
-	font-family: 'Nunito Sans', sans-serif;
-	color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+}
+
+main {
+  overflow: hidden;
 }

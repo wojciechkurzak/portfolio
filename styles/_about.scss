@@ -1,154 +1,154 @@
 @import 'mixins';
 
 .about {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	position: relative;
-	padding: 0 100px;
-	margin-top: 243px;
-	background: linear-gradient(
-		180deg,
-		rgba(7, 154, 128, 0.2) 0%,
-		rgba(7, 154, 128, 0) 100%
-	);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0 100px;
+  margin-top: 243px;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 154, 128, 0.2) 0%,
+    rgba(7, 154, 128, 0) 100%
+  );
 
-	.container {
-		display: flex;
-		justify-content: center;
-		gap: 100px;
-		margin-bottom: 160px;
-		max-width: 1280px;
-	}
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 160px;
+    max-width: 1280px;
+  }
 
-	&::before {
-		display: block;
-		content: '';
-		position: absolute;
-		top: -243px;
-		left: 0;
-		height: 243px;
-		width: 100%;
-		background-image: url('/portfolio/images/cloud.svg');
-	}
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -243px;
+    left: 0;
+    height: 243px;
+    width: 100%;
+    background-image: url('../images/cloud.svg');
+  }
 }
 
 .about-image {
-	position: relative;
+  position: relative;
 
-	&::before {
-		@include luminous-circle(280px, 240px);
-		top: -40px;
-		left: 80px;
-	}
+  &::before {
+    @include luminous-circle(280px, 240px);
+    top: -40px;
+    left: 80px;
+  }
 
-	&::after {
-		@include luminous-circle(280px, 240px);
-		top: 240px;
-		left: -40px;
-	}
+  &::after {
+    @include luminous-circle(280px, 240px);
+    top: 240px;
+    left: -40px;
+  }
 
-	.portfolio-image {
-		position: relative;
+  .portfolio-image {
+    position: relative;
 
-		img {
-			width: 320px;
-			border-radius: 8px;
-		}
+    img {
+      width: 320px;
+      border-radius: 8px;
+    }
 
-		&::before {
-			display: block;
-			content: '';
-			width: calc(100% + 8px);
-			height: calc(100% + 4px);
-			position: absolute;
-			top: -4px;
-			left: -4px;
-			background: -webkit-linear-gradient(
-				135deg,
-				rgba(255, 255, 255, 1) 0%,
-				rgba(2, 144, 147, 1) 100%
-			);
-			border-radius: 8px;
-			box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5);
-			z-index: -1;
-		}
-	}
+    &::before {
+      display: block;
+      content: '';
+      width: calc(100% + 8px);
+      height: calc(100% + 4px);
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      background: -webkit-linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(2, 144, 147, 1) 100%
+      );
+      border-radius: 8px;
+      box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+  }
 }
 
 .about-text {
-	h3 {
-		display: inline;
-		position: relative;
-		font-size: 36px;
+  h3 {
+    display: inline;
+    position: relative;
+    font-size: 36px;
 
-		&::after {
-			@include green-underline;
-		}
-	}
+    &::after {
+      @include green-underline;
+    }
+  }
 
-	p {
-		display: block;
-		font-size: 26px;
-		margin-top: 20px;
-	}
+  p {
+    display: block;
+    font-size: 26px;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-	.about {
-		.container {
-			gap: 76px;
-		}
-	}
+  .about {
+    .container {
+      gap: 76px;
+    }
+  }
 
-	.about-image {
-		&::before {
-			@include luminous-circle(220px, 180px);
-			top: -40px;
-			left: 80px;
-		}
+  .about-image {
+    &::before {
+      @include luminous-circle(220px, 180px);
+      top: -40px;
+      left: 80px;
+    }
 
-		&::after {
-			@include luminous-circle(220px, 180px);
-			top: 220px;
-			left: -40px;
-		}
+    &::after {
+      @include luminous-circle(220px, 180px);
+      top: 220px;
+      left: -40px;
+    }
 
-		.portfolio-image {
-			img {
-				width: 260px;
-			}
-		}
-	}
+    .portfolio-image {
+      img {
+        width: 260px;
+      }
+    }
+  }
 
-	.about-text {
-		p {
-			font-size: 22px;
-		}
-	}
+  .about-text {
+    p {
+      font-size: 22px;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
-	.about-text {
-		p {
-			font-size: 18px;
-		}
-	}
+  .about-text {
+    p {
+      font-size: 18px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.about {
-		padding: 0 20px;
-	}
+  .about {
+    padding: 0 20px;
+  }
 
-	.about-image {
-		display: none;
-	}
+  .about-image {
+    display: none;
+  }
 }
 
 @media screen and (max-height: 480px) and (orientation: landscape) {
-	.about {
-		margin-top: 403px;
-	}
+  .about {
+    margin-top: 403px;
+  }
 }
